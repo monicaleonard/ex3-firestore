@@ -1,5 +1,5 @@
 import './Appli.scss';
-import useLocalStorageState from './hooks/useLocalStorageState';
+import useLocalStorageState from '../hooks/useLocalStorageState';
 import Entete from './Entete.jsx';
 import ListeProduits from './ListeProduits';
 import Accueil from './Accueil';
@@ -9,7 +9,7 @@ import PiedDePage from './PiedDePage';
 import { Switch,Route } from 'react-router-dom';
 
 export default function Appli() { 
-  const etatPanier = useLocalStorageState({}, "panier");
+  const etatPanier = useLocalStorageState({}, "pvt-ex3-panier");
   return (
     <div className="Appli">
       <Entete etatPanier={etatPanier} />
