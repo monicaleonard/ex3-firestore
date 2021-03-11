@@ -35,8 +35,11 @@ export default function ListeProduits(props) {
       <ul>        
         {/*
           ******* Ex#3 - Étape H ******************************** 
-          Utiliser la variable d'état des produits pour générer les composants 'Produit' ci-dessous 
-          (vous pouvez reproduire la solution déjà faite en classe)
+          Utiliser la variable d'état des produits pour générer les composants 'Produit' ci-dessous.
+          Remarque : Vous pouvez reproduire la solution déjà faite en classe (c'est un trivial copier-coller).
+          Attention : les composants Produit s'attendent à recevoir l'état du panier dans leurs props, donc vous devez
+          avoir l'attribut "etatPanier={props.etatPanier}" quand vous les générer ici : encore une fois, regardez 
+          le code de l'exercice de classe.
         */}
 
       </ul>
