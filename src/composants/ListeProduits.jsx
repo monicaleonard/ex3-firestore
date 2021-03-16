@@ -3,12 +3,12 @@ import Produit from "./Produit";
 import { useEffect, useState } from 'react';
 /******* Ex#3 - Étape D ********************************/ 
 // Importer l'objet bd du fichier firebase.js
-import Bd from '../data/firebase';
+import bd from '../data/firebase';
 
 export default function ListeProduits(props) {
   /******* Ex#3 - Étape E ********************************/ 
   // Créer un "état" React pour les produits (utiliser useState)
-  const [produits, setProduits] = useState(null);
+  let [produits, setProduits] = useState([]);
     
   useEffect(() => {
     async function getProduits() {
@@ -20,7 +20,7 @@ export default function ListeProduits(props) {
       // [Suggestion : remarquez que la fonction getProduits() est marquée 'async'. Lorsque vous appelez la méthode Firestore qui retourne les produits, cette fonction 
       // est une Promesse, vous pouvez simplement utiliser la syntax 'await' pour attendre le résultat avant de remplir le tableau tabProduits 
       // (visionnez la capsule au sujet du code asynchrone en JavaScript)]
-      const reponse = await firestore.collection('ex3-produits').doc(ex3-produits.uid).get();
+      const reponse = await bd.collection('ex3-produits').doc('ex3-produits.uid').collection('produits').get();
 
       reponse.forEach(
         doc => tabProduits.push({id: doc.id, ...doc.data()})
@@ -44,7 +44,11 @@ export default function ListeProduits(props) {
           Attention : les composants Produit s'attendent à recevoir l'état du panier dans leurs props, donc vous devez
           avoir l'attribut "etatPanier={props.etatPanier}" quand vous les générer ici : encore une fois, regardez 
           le code de l'exercice de classe.
-        */}
+        */
+          produits.map(
+            produits => <li key={produits.id} etatPanier={props.etatPanier}><Produit {...produits} /></li>
+          )
+        }
 
       </ul>
     </div>
