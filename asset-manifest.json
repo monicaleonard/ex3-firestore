@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ex3-firestore/static/css/main.79150070.chunk.css",
-    "main.js": "/ex3-firestore/static/js/main.b1847427.chunk.js",
-    "main.js.map": "/ex3-firestore/static/js/main.b1847427.chunk.js.map",
+    "main.js": "/ex3-firestore/static/js/main.994a50b5.chunk.js",
+    "main.js.map": "/ex3-firestore/static/js/main.994a50b5.chunk.js.map",
     "runtime-main.js": "/ex3-firestore/static/js/runtime-main.9505ad04.js",
     "runtime-main.js.map": "/ex3-firestore/static/js/runtime-main.9505ad04.js.map",
     "static/js/2.8887f0e5.chunk.js": "/ex3-firestore/static/js/2.8887f0e5.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.9505ad04.js",
     "static/js/2.8887f0e5.chunk.js",
     "static/css/main.79150070.chunk.css",
-    "static/js/main.b1847427.chunk.js"
+    "static/js/main.994a50b5.chunk.js"
   ]
 }
